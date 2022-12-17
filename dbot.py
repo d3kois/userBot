@@ -13,14 +13,8 @@ conn.commit()
 
 def register_user(id):
 	data = (str(id), 1, 0)
-	# cur.execute("SELECT * FROM users WHERE userActive = 1")
-	# result = cur.fetchone()
-
 	cur.execute("SELECT * FROM users WHERE userid ="+str(id))
 	result = cur.fetchone()
-	# print('re2', result2)
-	# cur.execute("SELECT * FROM users WHERE userActiveS = 1")
-	# result2 = cur.fetchone()
 	print(result)
 
 	if result == None:
@@ -40,11 +34,3 @@ def register_user(id):
 			conn.commit()
 			result = 'third'
 			return result
-
-# def info_user(id):
-# 	cur.execute("SELECT AllSendMessage, AllJoinMessage  FROM users")
-# 	result = cur.fetchone()
-# 	print('user_bank -- ',result)
-# 	return result
-
-# def send_message()
