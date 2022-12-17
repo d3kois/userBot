@@ -1,3 +1,5 @@
+pip install pyrogram
+
 RUS:
 В файле config.ini введите свои данные (можно взять тут: https://my.telegram.org/auth)
 В файле dbot.py в 3 строке введите путь до корневой папки проекта
